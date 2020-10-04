@@ -27,4 +27,17 @@
 .skillss{
     margin-top: 30px;
     text-align: center;
+    border: darkslateblue solid 7px;
+}
+.my-work{
+    text-align: center;
+    background-color: darkcyan; 
+}
+.container-six{
+    text-align: center;
+    position: fixed;
+   bottom: 0;
+    font-size: 25px;
+    width: 100%;
+
 }
