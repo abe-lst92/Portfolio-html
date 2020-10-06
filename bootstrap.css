@@ -13,8 +13,9 @@
 
 }
 .me{ 
-    border: darkcyan solid 10px;
+    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 .personal{
     font-family: fantasy;
@@ -26,8 +27,9 @@
 }
 .skillss{
     margin-top: 30px;
-    text-align: center;
-    border: darkslateblue solid 7px;
+    /* text-align: center; */
+    list-style-type: none ;
+    
 }
 .my-work{
     text-align: center;
@@ -36,8 +38,17 @@
 .container-six{
     text-align: center;
     position: fixed;
-   bottom: 0;
+    bottom: 0;
     font-size: 25px;
     width: 100%;
+
+}
+ul.skillss{
+    
+    margin-left: 40%;
+    margin-top: 7%;
+}
+.navigation{
+    border: black solid 10px;
 
 }
