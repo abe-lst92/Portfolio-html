@@ -2,115 +2,210 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link type="text/css" href="/css/style.css" rel="stylesheet">
 
-    <title>Bootstrap Portfolio</title>
+  <title>About-me</title>
 
 
 </head>
 
 
+
 <body>
+  <!-- picture of my self -->
+  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:35%">
+    <div class="bgimg"></div>
+  </nav>
 
-    <header class="navigation">
-        <nav class="nav nav-pills flex-column flex-sm-row">
-            <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Home</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="contact.html">Contact</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="bootstrap.html">About Me</a>
+  <!-- Hamburger navbar using w3schools -->
+  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+      style="padding:0 12px;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+    </div>
+    <ul style=" margin-left: 30%; margin-top: 50px; font-size: 74px;">
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
 
-        </nav>
-    </header>
+    </ul>
+  </nav>
 
 
 
-    <!--Header Day care -->
-    <div class="jumbotron jumbotron-fluid" style="background-color: cornflowerblue;">
-        <div class="container-one">
-            <h1 class="display-4">Welcome to our kindercare</h1>
-            <p class="lead">We are here to help grow our community and make it feel a better place.</p>
-   </div>
+
+
+
+
+
+  <main>
+    <!-- part of the hamburger part -->
+    <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+      onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+    <!--Title for my page-->
+
+    <div class="container">
+      <h1 style="margin-top: 100px ">Abraham Sauceda</h1>
+
+
+
+      <h3>Web Designer</h3>
+      <img src="images/Abraham.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round"
+        style="display:block;width:30%;margin:auto;">
+      <img src="images/Abraham.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+
+
+      <br>
+      <br>
+
+
+
 
     </div>
+    <!--new row for my about me-->
 
-
-    <!--Paragraphs-->
     <div class="container">
-        <div class="row">
 
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/images.jpeg" class="card-img-top" alt="image of a kindercare">
-                    <div class="card-body">
-                        <h3>Purpose of our kindercare</h3>
-                        <p class="card-text">The purpose for our program is to entretain and show new ideas to our
-                            community for our children and how we can take care of them, That's our main priority!!.</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/KinderCare-Logo.jpg" class="card-img-top" alt="KinderCare-Logo">
-                    <div class="card-body">
-                        <h3>What we do in kindercare?</h3>
-                        <p class="card-text">First of all we make sure that this children are save and in good hands.
-                            One of the things that we do with the children are to get a smile from them and that they
-                            feel safe while we entretain them</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/Mobile App LP.jpg" class="card-img-top" alt="Pictures of animals for kindercare">
-                    <div class="card-body">
-                        <h3>Any questions? </h3>
-                        <p class="card-text">The fastest way to contact our kindercare is by email.</p>
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                            <a href="contact.html">contact</a>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-6 me">
+          <h3><strong>About me</strong></h3>
+          <p class="p1" style="text-align: center;">
+            Born in Mexico, currently living on Denver. I specialized in the front end to develop websites.
+            Experience with javascript, media queries, css, html, and java. I'm seeking to master these
+            languages and learn more languages specially for developing more interesting web sites. I have
+            commit projects on Github, learn how to create projects through vscode. My aim is to make the
+            clients be happy for the work I love and give them the best experience of their lives. And gain
+            more experience through the projects.
+          </p>
         </div>
 
-
-
+      </div>
+      <br>
+      <br>
     </div>
-    <br>
-    <br>
-    <br>
+
+
+    <!-- New row for my porfolio  -->
+    <div class="container1">
+      <div class="row">
+        <div class="w3-padding-33 w3-content" id="portfolio">
+          <h2 class="w3-text-grey">My Portfolio</h2>
+          <hr class="w3-opacity">
+
+          <!-- Grid for photos -->
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="images/Screenshot 2020-10-04 at 11.02.46 AM.png" style="width:100%">
+              <img src="images/Screenshot 2020-10-04 at 12.31.26 PM.png" style="width:100%">
+              <img src="images/Screenshot 2020-10-04 at 12.36.27 PM.png" style="width:100%">
+            </div>
+
+            <div class="w3-half">
+              <img src="images/Screenshot 2020-10-06 at 4.59.59 PM.png" style="width:100%">
+              <img src="images/Screenshot 2020-10-06 at 4.59.13 PM.png" style="width:100%">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- My contact me form -->
+    <div style="margin-top: 100px;" class="container3">
+      <h1 id="contact">Contact Me</h1>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>My phone number is: 720-366-6408</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> My email address is: abraham.sauz7@gmail.com
+      </p>
+    </div>
+    <!--  The actually form -->
+    <div class="contact">
+      <h3>Email Us</h3>
+      <form method="POST" action="send">
+        <p>
+          <label>Name</label>
+          <input type="text" name="name">
+        </p>
+        <p>
+          <label>Email Address</label>
+          <input type="email" name="email">
+        </p>
+        <p>
+          <label>Phone Number</label>
+          <input type="text" name="phone">
+        </p>
+        <p class="full">
+          <label>Message</label>
+          <textarea name="message" rows="5"></textarea>
+        </p>
+        <p class="full">
+          <button type="submit">Submit</button>
+        </p>
+      </form>
+    </div>
+
+
+
+
+
+
+  </main>
+
+
+  <script>
+    // Open and close sidebar
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "60%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
 
 </body>
-<!--Footer-->
 
-<div class="container-five">
-    <div class="col-12">
-        <footer>
-            <p>Thanks for comming!!!!</p>
-        </footer>
-    </div>
-</div>
+
+
+<footer style="margin-left: 40%; text-align: center"
+  class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+      class="w3-hover-text-green">Abraham Sauceda.</a></p>
+  <!-- End footer -->
+</footer>
+
 
 </html>
