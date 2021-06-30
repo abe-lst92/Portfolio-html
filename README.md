@@ -1,4 +1,4 @@
 # Bootstrap-Portfolio-html
 
 ![](images/screeshot.png)
-![](images/screenshot2.png)
+![](images/screenshot1.png)
