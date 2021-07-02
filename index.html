@@ -16,6 +16,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="bootstrap.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -28,19 +29,27 @@
 
 </head>
 <style>
-
+  .borders {
+    border: 1px solid;
+    width: 700px;
+    box-shadow: 5px 20px 20px #888888;
+  }
 </style>
 
 
 <body>
+
   <!-- picture of my self -->
-  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:35%">
-    <!-- <div class="bgimg"> -->
-      <img  src="images/Abraham.jpeg" alt="picture of me">
-    <!-- </div> -->
+  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:39%;">
+    <div class="borders">
+
+      <img style="width: 700px; min-height: 100%;" src="images/Abraham.jpeg" alt="picture of me" class=" mee">
+    </div>
   </nav>
+
+
   <!-- Hamburger navbar using w3schools -->
-  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
+  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2;"
     id="mySidebar">
     <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
       style="padding:0 12px;">
@@ -66,112 +75,133 @@
 
 
 
-  
-    <!-- part of the hamburger part -->
-    <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
-      onclick="openNav()"><i class="fa fa-bars"></i></span>
-
-    <!--Title for my page-->
-
-    <div class="container">
-      <h1 style="margin-top: 100px ">Abraham Sauceda</h1>
-
+  <!-- part of the hamburger part -->
+  <div style="background-color: black; position: sticky;"> <br>
+    <br>
+    <br>
+  </div>
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+    onclick="openNav()"><i class="fa fa-bars"></i>
+  </span>
 
 
-      <h3>Web Designer</h3>
-      <!-- <img src="images/Abraham.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round"
+  <!--Title for my page-->
+
+  <div class="container">
+    <h1 style="margin-top: 100px ">Abraham Sauceda</h1>
+
+
+
+    <h3>Web Designer</h3>
+    <!-- <img src="images/Abraham.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round"
         style="display:block;width:30%;margin:auto;"> -->
-      <!-- <img src="images/Abraham.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333"> -->
+    <!-- <img src="images/Abraham.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333"> -->
 
 
-      <br>
-      <br>
+    <br>
+    <br>
 
+  </div>
+  <!--new row for my about me-->
 
+  <div class="container">
 
+    <div class="row">
+      <div class="col-6 me">
+        <h3><strong>About me</strong></h3>
+        <p class="p1" style="text-align: center;">
+          Born in Mexico, currently living on Denver. I specialized in the front end to develop websites.
+          Experience with javascript, media queries, css, html, and java. I'm seeking to master these
+          languages and learn more languages specially for developing more interesting web sites. I have
+          commit projects on Github, learn how to create projects through vscode. My aim is to make the
+          clients be happy for the work I love and give them the best experience of their lives. And gain
+          more experience through the projects.
+        </p>
+      </div>
 
     </div>
-    <!--new row for my about me-->
+    <br>
+    <br>
+  </div>
 
-    <div class="container">
 
-      <div class="row">
-        <div class="col-6 me">
-          <h3><strong>About me</strong></h3>
-          <p class="p1" style="text-align: center;">
-            Born in Mexico, currently living on Denver. I specialized in the front end to develop websites.
-            Experience with javascript, media queries, css, html, and java. I'm seeking to master these
-            languages and learn more languages specially for developing more interesting web sites. I have
-            commit projects on Github, learn how to create projects through vscode. My aim is to make the
-            clients be happy for the work I love and give them the best experience of their lives. And gain
-            more experience through the projects.
-          </p>
+  <!-- New row for my porfolio  -->
+  <div class="container1">
+    <h2 id="portfolio">My Portfolio</h2>
+
+    <div class="row1">
+
+      <!-- Grid for photos -->
+      <div class="card" style="width: 18rem;">
+        <img src="images/trivia-game.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Trivia Game </h5>
+          <p class="card-text">This project was created with the purpose of understand js.</p>
+          <a href="https://github.com/abe-lst92/JS-Trivia-Game" class="btn btn-primary">More Details</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="images/guessing-game.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Guess My Number or Your Number</h5>
+          <p class="card-text">In this Project I used Java to create a complex game that gives the user an experience of difficulty.</p>
+          <a href="https://github.com/abe-lst92/Guessing-game-java" class="btn btn-primary">More details</a>
         </div>
 
       </div>
-      <br>
-      <br>
-    </div>
-
-
-    <!-- New row for my porfolio  -->
-    <div class="container1">
-      <div class="row">
-        <div class="w3-padding-33 w3-content" id="portfolio">
-          <h2 class="w3-text-grey">My Portfolio</h2>
-          <hr class="w3-opacity">
-
-          <!-- Grid for photos -->
-          <div class="w3-row-padding" style="margin:0 -16px">
-            <div class="w3-half">
-              <img src="images/Screenshot 2020-10-04 at 11.02.46 AM.png" style="width:100%">
-              <img src="images/Screenshot 2020-10-04 at 12.31.26 PM.png" style="width:100%">
-              <img src="images/Screenshot 2020-10-04 at 12.36.27 PM.png" style="width:100%">
-            </div>
-
-            <div class="w3-half">
-              <img src="images/Screenshot 2020-10-06 at 4.59.59 PM.png" style="width:100%">
-              <img src="images/Screenshot 2020-10-06 at 4.59.13 PM.png" style="width:100%">
-            </div>
-          </div>
+      <div class="card" style="width: 18rem;">
+        <img src="images/OrderPizza.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Order A Pizza</h5>
+          <p class="card-text">This project was created with the purpose of giving the user an experience of how to make their own pizza and the cost of it.</p>
+          <a href="https://github.com/abe-lst92/Rb-Pizza-final-PJ" class="btn btn-primary">More Details</a>
         </div>
-
       </div>
+      <div class="card" style="width: 18rem;">
+        <img src="images/companyGame.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Video Game company</h5>
+          <p class="card-text">This project was created with the idea of how you company will be if you wish one.</p>
+          <a href="https://github.com/abe-lst92/Final2-Project-html" class="btn btn-primary">More Details</a>
+        </div>
+      </div>
+
     </div>
+  </div>
 
-
-    <!-- My contact me form -->
-    <div style="margin-top: 100px;" class="container3">
-      <h1 id="contact">Contact Me</h1>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>My phone number is: 720-366-6408</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> My email address is: abraham.sauz7@gmail.com
+  <!-- My contact me form -->
+  <div style="margin-top: 100px;" class="container3">
+    <h1 id="contact">Contact Me</h1>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>My phone number is: 720-366-6408</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> My email address is: abraham.sauz7@gmail.com
+    </p>
+  </div>
+  <!--  The actually form -->
+  <div class="contact">
+    <h3>Email Us</h3>
+    <form method="POST" action="send">
+      <p>
+        <label>Name</label>
+        <input type="text" name="name">
       </p>
-    </div>
-    <!--  The actually form -->
-    <div class="contact">
-      <h3>Email Us</h3>
-      <form method="POST" action="send">
-        <p>
-          <label>Name</label>
-          <input type="text" name="name">
-        </p>
-        <p>
-          <label>Email Address</label>
-          <input type="email" name="email">
-        </p>
-        <p>
-          <label>Phone Number</label>
-          <input type="text" name="phone">
-        </p>
-        <p class="full">
-          <label>Message</label>
-          <textarea name="message" rows="5"></textarea>
-        </p>
-        <p class="full">
-          <button type="submit">Submit</button>
-        </p>
-      </form>
-    </div>
+      <p>
+        <label>Email Address</label>
+        <input type="email" name="email">
+      </p>
+      <p>
+        <label>Phone Number</label>
+        <input type="text" name="phone">
+      </p>
+      <p class="full">
+        <label>Message</label>
+        <textarea name="message" rows="5"></textarea>
+      </p>
+      <p class="full">
+        <button type="submit">Submit</button>
+      </p>
+    </form>
+  </div>
 
 
 

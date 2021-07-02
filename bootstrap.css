@@ -8,9 +8,16 @@
 
 }
 .container1{
-    margin-left: 40%;
+    margin-left: 60%;
     margin-top: 5%;
+    display: flex;
     display: block;
+    
+}
+.row1{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 h3{
@@ -102,13 +109,32 @@ ul{
 .fa {
   opacity: 0.5;
 }
-   @media screen and (max-width: 7000px) {
+
     
-   .container{
-    margin-right: 30%;
-  
-}
-.p1{
-  font-size: 10px;
-}
-  } 
+    /* @media screen and (max-width: 1692px) {
+    
+
+
+      .mee{
+        height: 800px;
+        width: 30%;
+      }
+      .container{
+        margin-left: 50%;
+        display: block;
+    }
+   
+    .container1{
+        margin-left: 30%;
+        margin-top: 5%;
+    }
+    
+    h3{
+        font-family: 'Kaushan Script', cursive;
+    }
+    .container3{
+        margin-left: 60%;
+        display: block;
+    }
+        } 
+   */
