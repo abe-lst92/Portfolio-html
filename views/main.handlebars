@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abraham-design-development</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link type="text/css" href="/css/style.css" rel="stylesheet">
+</head>
+
+<style>
+    .borders {
+        border: 1px solid;
+        width: 700px;
+        box-shadow: 5px 20px 20px #888888;
+    }
+</style>
+
+<body>
+
+
+    <!-- picture of my self -->
+    <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:39%;">
+        <div class="borders">
+
+            <img style="width: 700px; min-height: 100%;" src="images/Abraham.jpeg" alt="picture of me" class=" mee">
+        </div>
+    </nav>
+
+
+    <!-- Hamburger navbar using w3schools -->
+    <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge"
+        style="display:none;padding-top:150px;right:0;z-index:2;" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+            style="padding:0 12px;">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+                onclick="closeNav()">Portfolio</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+                onclick="closeNav()">Contact</a>
+        </div>
+        <ul style=" margin-left: 30%; margin-top: 50px; font-size: 74px;">
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+    <!-- part of the hamburger part -->
+    <div style="background-color: black; position: sticky;"> <br>
+        <br>
+        <br>
+    </div>
+    <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+        onclick="openNav()"><i class="fa fa-bars"></i>
+    </span>
+
+
+    <!--Title for my page-->
+
+    <div class="container">
+        <h1 style="margin-top: 100px ">Abraham Sauceda</h1>
+
+
+
+        <h3>Web Designer</h3>
+        <!-- <img src="images/Abraham.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round"
+        style="display:block;width:30%;margin:auto;"> -->
+        <!-- <img src="images/Abraham.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333"> -->
+
+
+        <br>
+        <br>
+
+    </div>
+    <!--new row for my about me-->
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-6 me">
+                <h3><strong>About me</strong></h3>
+                <p class="p1" style="text-align: center;">
+                    Born in Mexico, currently living on Denver. I specialized in the front end to develop websites.
+                    Experience with javascript, media queries, css, html, and java. I'm seeking to master these
+                    languages and learn more languages specially for developing more interesting web sites. I have
+                    commit projects on Github, learn how to create projects through vscode. My aim is to make the
+                    clients be happy for the work I love and give them the best experience of their lives. And gain
+                    more experience through the projects.
+                </p>
+            </div>
+
+        </div>
+        <br>
+        <br>
+    </div>
+
+
+    <!-- New row for my porfolio  -->
+    <div class="container1">
+        <h2 id="portfolio">My Portfolio</h2>
+
+        <div class="row1">
+
+            <!-- Grid for photos -->
+            <div class="card" style="width: 18rem;">
+                <img src="images/trivia-game.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Trivia Game </h5>
+                    <p class="card-text">This project was created with the purpose of understand js.</p>
+                    <a href="https://github.com/abe-lst92/JS-Trivia-Game" class="btn btn-primary">More Details</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="images/guessing-game.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Guess My Number or Your Number</h5>
+                    <p class="card-text">In this Project I used Java to create a complex game that gives the user an
+                        experience of difficulty.</p>
+                    <a href="https://github.com/abe-lst92/Guessing-game-java" class="btn btn-primary">More details</a>
+                </div>
+
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/OrderPizza.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Order A Pizza</h5>
+                    <p class="card-text">This project was created with the purpose of giving the user an experience of
+                        how to make their own pizza and the cost of it.</p>
+                    <a href="https://github.com/abe-lst92/Rb-Pizza-final-PJ" class="btn btn-primary">More Details</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/companyGame.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Video Game company</h5>
+                    <p class="card-text">This project was created with the idea of how you company will be if you wish
+                        one.</p>
+                    <a href="https://github.com/abe-lst92/Final2-Project-html" class="btn btn-primary">More Details</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <h1 class="brand"><span>Abraham</span> Design</h1>
+        <div class="company-info">
+            <h3>Abraham</h3>
+            <ul>
+                <li><i class="fa fa-phone"></i> (720)-366-6408</li>
+                <li><i class="fa fa-envelope"></i> abraham.sauz7@gmail.com</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>Email Us</h3>
+            {{msg}}
+            <form method="POST" action="send" style="margin-top: 20px;">
+                <p>
+                    <label>Name</label>
+                    <input type="text" name="name">
+                </p>
+                <p>
+                    <label>Email Address</label>
+                    <input type="email" name="email">
+                </p>
+                <p>
+                    <label>Phone Number</label>
+                    <input type="text" name="phone">
+                </p>
+                <p class="full">
+                    <label>Message</label>
+                    <textarea name="message" rows="5"></textarea>
+                </p>
+                <p class="full">
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script>
+        // Open and close sidebar
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "60%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+
+</body>
+<footer style="margin-left: 40%; text-align: center; bottom: 0; margin-top: 90px;"
+    class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+            class="w3-hover-text-green">Abraham Sauceda.</a></p>
+    <!-- End footer -->
+</footer>
+
+</html>

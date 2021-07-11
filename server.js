@@ -1,23 +1,32 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const exphbs = require('express-handlebars');
+
 const nodemailer = require('nodemailer');
+
 const path = require('path');
 const app = express();
 const dotenv = require('dotenv').config()
- 
+
 const PORT = process.env.PORT || 5000;
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+
+app.engine('handlebars', exphbs({defaultLayout: false}));
+ app.set('view engine', 'handlebars');
+
+
 app.use('/images', express.static('images'));
 app.use('/css', express.static('css'));
 
-// app.use('/views', express.static(path.join(__dirname, 'views')));
+
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, "index.html"));
-})
+    res.render('main');
+  });
 
 app.post('/send', (req, res) => {
     const output = `
@@ -41,8 +50,8 @@ app.post('/send', (req, res) => {
             user: 'abraham.sauz7@gmail.com', // generated ethereal user
             pass: process.env.PASSWORD, // generated ethereal password
         },
-        tls:{
-            rejectUnauthorized:false
+        tls: {
+            rejectUnauthorized: false
         }
     });
 
@@ -58,9 +67,10 @@ app.post('/send', (req, res) => {
         if (error) {
             return console.log(error);
         }
-        console.log("Message sent: %s", info.messageId);
-        console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+        console.log('Message sent: %s', info.messageId);
+        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
+        res.render('main', {msg:'Email has been sent'});
 
     });
 
