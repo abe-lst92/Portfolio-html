@@ -6,30 +6,37 @@
 .container1{
     margin-left: 40%;
     margin-top: 5%;
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+
+}
+
+ .borders {
+  border: 1px solid;
+  width: 0px;
+  box-shadow: 5px 20px 20px #888888;
+  opacity: 0.1;
+  transition: width 2s;
+} 
+
+.abraham{
+  
+   min-height: 100%;
+   transition: width 2s;
 }
 
 h3{
     font-family: 'Kaushan Script', cursive;
 }
 .container3{
-    margin-left: 40%;
+    margin-left: 30%;
     display: block;
 }
 
-
-.bgimg {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('/images/Abraham.jpeg');
-    min-height: 100%;
-    min-width: 100px;
-
-    
-}
 .contact{
-    margin-left: 40%;
+    margin-left: 20%;
     margin-top: 70px;
 }
 
@@ -53,15 +60,17 @@ ul{
   .wrapper > *{
     padding: 1em;
   }
-  
-  .company-info{
+
+
+  .contact-info{
     background:#c9e6ff;
   }
   
-  .company-info h3, .company-info ul{
+  .contact-info h3, .contact-info ul{
     text-align: center;
     margin:0 0 1rem 0;
   }
+ 
   
   .contact{
     background:#f9feff;
@@ -82,9 +91,9 @@ ul{
     margin:0;
   }
   
-  /* .contact form .full{
+  .contact form .full{
     grid-column: 1 / 3;
-  } */
+  } 
   
   .contact form button, .contact form input, .contact form textarea{
     width:100%;
@@ -104,3 +113,18 @@ ul{
     outline:0;
     transition: background-color 2s ease-out;
   }
+  
+   .borders:hover {
+    opacity: 1;
+    border-radius: 10% / 50%; 
+    width: 700px; 
+} 
+ .abraham:hover {
+  border-radius: 10% / 50%; 
+  width: 700px; 
+} 
+
+.img2:hover{
+  height: 300px;
+  width: 350px;
+}
